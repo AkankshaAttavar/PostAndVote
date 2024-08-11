@@ -1,0 +1,55 @@
+.login-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #ff0080 30%, #ff8c00 70%);
+    background-size: 200% 200%;
+    color: white;
+    text-align: center;
+    animation: gradientAnimation 10s ease infinite;
+}
+
+.project-title {
+    font-size: 3rem;
+    /* Adjust the font size as needed */
+    margin-bottom: 20px;
+    /* Add some space below the project title */
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    /* Add a subtle shadow */
+    letter-spacing: 2px;
+    /* Adjust the spacing between letters */
+}
+
+button {
+    background-color: #ff007a;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+button:hover {
+    background-color: #ff3399;
+    transform: scale(1.05);
+}
+
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
